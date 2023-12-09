@@ -7,8 +7,13 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
+main {
+    flex-grow: 1;
+}
 button {
     cursor: pointer;
 }
@@ -68,7 +73,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
     padding: 16px 0;
     display: block;
 }
@@ -78,20 +82,33 @@ img {
 }
 
 .container {
-    max-width: 320px;
-    padding: 0 16px;
-    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+.container {
+    max-width: 768px;
+    }
 }
 
+@media screen and (min-width: 1158px) {
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    }
+}
 /* HEADER STYLES MOBILE*/
-
+@media screen and (max-width: 767px) {
 
 .menu-header {
     display: none;
 }
     
-.address-menu {
+.address {
     display: none;
+}
 }
 
 .menu-button-burger-mobile {
@@ -108,7 +125,7 @@ img {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .header {
@@ -121,6 +138,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     z-index: 999;
 
     
