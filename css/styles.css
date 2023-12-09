@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto',
+    sans-serif;
+    color: #434455;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: currentColor;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.logo-header {
+    color: #4D5AE5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 76px;
+    padding: 16px 0;
+}
+
+.text-logo-header {
+    color: #2E2F42;
+}
+
+.container {
+    max-width: 320px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+/* HEADER STYLES MOBILE*/
+
+@media screen and (max-width: 767px) {
+.menu-header {
+    display: none;
+}
+
+.address-menu {
+    display: none;
+}
+.menu-button-burger-mobile {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+}
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    background: #fff;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+/* /HEADER STYLES MOBILE */
+@media screen and (min-width: 768px) {
+.container {
+    max-width: 768px;
+}
+}
+/* HEADER STYLES TABLET */
+
+/* /HEADER STYLES TABLET */
+@media  screen and (min-width: 1158px) {
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+} 
+}
+/* HEADER STYLES DESKTOP */
+
+/* /HEADER STYLES DESKTOP */
