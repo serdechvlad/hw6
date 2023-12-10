@@ -118,10 +118,10 @@ img {
     z-index: 999;
    }
 
-   .menu-header {
-       display: flex;
-       gap: 40px;
-   }
+.menu-header {
+    display: flex;
+    gap: 40px;
+}
 
    .menu-item-header {
        display: block;
