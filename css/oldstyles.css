@@ -121,7 +121,7 @@ img {
 .menu-header {
     display: flex;
     gap: 40px;
-}
+   }
 
    .menu-item-header {
        display: block;

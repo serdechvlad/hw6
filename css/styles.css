@@ -87,20 +87,9 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-@media screen and (min-width: 768px) {
-.container {
-    max-width: 768px;
-    }
-}
 
-@media screen and (min-width: 1158px) {
-.container {
-    max-width: 1158px;
-    padding: 0 15px;
-    }
-}
 /* HEADER STYLES MOBILE*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
 .menu-header {
     display: none;
@@ -135,7 +124,7 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
-/* MENU MODAL WINDOW */
+/* MENU  WINDOW */
 .menu-mobile-container {
     display: flex;
     flex-direction: column;
@@ -178,9 +167,9 @@ img {
     
 }
 .menu-modal-button-close:hover, .menu-modal-button-close:focus {
-background-color: #404BBF;
-border: none;
-fill: #ffffff;
+    background-color: #404BBF;
+    border: none;
+    fill: #ffffff;
 }
 .menu-modal-button-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -217,13 +206,13 @@ fill: #ffffff;
 }
 
 .address-data-mobile {
-font-style: normal;
-text-decoration: none;
-color: #434455;
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
+    font-style: normal;
+    text-decoration: none;
+    color: #434455;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 .address-data-mobile-number {
     color: #4D5AE5;
@@ -237,14 +226,14 @@ letter-spacing: 0.02em;
     gap: 40px;
 }
 .icons-link-mobile {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 40px;
-height: 40px;
-background-color: #4d5ae5;
-border-radius: 50%;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .icon-x-mobile {
     fill: #fff;
@@ -260,37 +249,182 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 /* HEADER STYLES TABLET */
 .container {
-        max-width: 768px;
-    }
-
-    .header {
-        height: 72px;
-    }
-
-    .menu-button-burger-mobile {
-        display: none;
-    }
-    .nav-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .menu-header {
-        display: flex;
-        gap: 40px;
-        
-    }
-        .text-logo-header {
-            margin-right: 120px;
-        }
+    max-width: 768px;
 }
+.menu-button-burger-mobile {
+    display: none;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-header {
+    display: flex;
+    gap: 40px;
+}
+.text-logo-header {
+    margin-right: 120px;
+}
+.menu-item-header {
+    position: relative;
+}
+.menu-item-link {
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    color:#2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.blueline {
+    padding: 24px 0;
+    position: relative;
+    color: #404BBF;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.blueline::after {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+.menu-item-link:hover,
+.menu-item-link:focus,
+.address-data:hover,
+.address-data:focus {
+    color: #404BBF;
+}
+.address-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.address {
+    display: block;
+    margin-left: auto;
+}
+.address-data {
+    display: block;
+    color: #434455;
+    font-size: 12px;
+    line-height: 1.17;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+}
+
 /* /HEADER STYLES TABLET */
+/* HEADER STYLES DESKTOP */
 @media  screen and (min-width: 1158px) {
 .container {
     max-width: 1158px;
     padding: 0 15px;
 } 
+.text-logo-header {
+    margin-right: 76px;
 }
-/* HEADER STYLES DESKTOP */
-
+.address-menu {
+    flex-direction: row;
+    gap: 40px;
+}
+.address-data {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-item-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
 /* /HEADER STYLES DESKTOP */
+
+/* SECTION HEROOOOOOOOOOOO */
+
+/* HERO MOBILE */
+@media screen and (max-width: 768px) {
+.backcolor-bc {
+    max-width: 320px;
+    background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/ofsmallmob.jpg);
+    padding: 72px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+.start-page {
+    background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/oficemobilexx@2x.jpg);
+    }
+}
+.solution-button {
+    width: 288px;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+.button-ord {
+    background-color: #4d5ae5;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin: 48px auto 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}   
+.button-ord:hover,
+.button-ord:focus {
+    background: #404BBF;
+    color: #FFF;
+}
+}
+/* HERO MOBILE */
+
+
+/* HERO TABLET */
+
+@media screen and (min-width: 768px) {
+.backcolor-bc {max-width: 768px;
+padding: 112px 0;
+background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+url(../images/oficestandtabx.jpg);
+}
+}
+/* HERO TABLET */
+
+
+/* HERO PC */
+
+/* HERO PC */
