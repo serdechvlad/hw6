@@ -763,7 +763,6 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: auto;
     margin-right: auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 24px;
     margin-bottom: 24px;
 }
@@ -792,6 +791,7 @@ img {
 @media screen and (min-width: 768px) {
     .modal {
     width: 408px;
+
 }
 }
 /* BLACKDROP MODAL WINDOW */
