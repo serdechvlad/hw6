@@ -353,7 +353,7 @@ img {
 
 /* HERO MOBILE */
 .backcolor-bc {
-    max-width: 320px;
+    max-width: 100%;
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/ofsmallmob.jpg);
     padding: 72px 0;
@@ -415,7 +415,7 @@ img {
 
 @media screen and (min-width: 768px) {
 .backcolor-bc {
-    max-width: 767px;
+    max-width: 100%;
     padding: 112px 0;
     background-image: linear-gradient(to bottom,
     rgba(46, 47, 66, 0.7),
@@ -795,3 +795,103 @@ img {
 }
 }
 /* BLACKDROP MODAL WINDOW */
+
+/*  DESCRIPTION BENEFITS */
+@media screen and (max-width: 1157px) {
+    .icon-box {
+        display: none;
+    }
+}
+
+.section {
+    padding: 96px 0;
+}
+.titles-menu-desc {
+    color: #2e2f42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+.paragraf {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
+}
+
+.hide-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.menu-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+
+}
+
+@media screen and (min-width: 768px) {
+.titles-menu-desc {
+    text-align: start;
+}
+.items-menu-desc {
+    width: calc((100% - 24px) / 2);
+}
+.menu-desc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+}
+@media screen and (min-width: 1158px) {
+.icon-box {
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    }
+
+    .section {
+    padding: 120px 0;
+}
+.menu-desc {
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+.items-menu-desc {
+    width: calc((100% - 72px) / 4);
+}
+.titles-menu-desc {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+}
+.paragraf {
+    color:#434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+}
+/*  DESCRIPTION BENEFITS */
