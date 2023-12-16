@@ -116,58 +116,58 @@ img {
     position: sticky;
     top: 0;
     z-index: 999;
-   }
+}
 
 .menu-header {
     display: flex;
     gap: 40px;
-   }
+}
 
-   .menu-item-header {
-       display: block;
-       color: #2E2F42;
-       font-weight: 500;
-   }
+.menu-item-header {
+    display: block;
+    color: #2E2F42;
+    font-weight: 500;
+}
 
-   .nav-menu {
-       display: flex;
-       align-items: center;
-   }
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
 
-   .menu-item-link {
-       padding-top: 24px;
-       padding-bottom: 24px;
-       display: block;
+.menu-item-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
+}
 
-   .menu-item-link:hover,
-   .menu-item-link:focus,
-   .address-data:hover,
-   .address-data:focus {
-       color: #404BBF;
-   }
+.menu-item-link:hover,
+.menu-item-link:focus,
+.address-data:hover,
+.address-data:focus {
+    color: #404BBF;
+}
 
 
    /* address */
 
-   .address-data {
-       color: #434455;
-       display: block;
-       padding-top: 24px;
-       padding-bottom: 24px;
-       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
+.address-data {
+    color: #434455;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-   .address-menu {
-       display: flex;
-       gap: 40px;
-   }
+.address-menu {
+    display: flex;
+    gap: 40px;
+}
 
-   .address {
-       font-style: normal;
-       display: flex;
-   }
+.address {
+    font-style: normal;
+    display: flex;
+}
 
    /* button */
 
@@ -516,6 +516,7 @@ img {
 .footer-link:focus {
     background-color: #31D0AA;
 }
+
 
         /* BACKDROP */
 .backdrop {
