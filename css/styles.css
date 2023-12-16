@@ -77,6 +77,8 @@ img {
     text-transform: uppercase;
     padding: 16px 0;
     display: block;
+    margin-right: 120px;
+        
 }
 
 .text-logo-header {
@@ -158,9 +160,6 @@ img {
      gap: 40px;
 }
 
-.text-logo-header {
-    margin-right: 120px;
-}
 
 .menu-item-header {
     position: relative;
@@ -227,6 +226,9 @@ img {
 /* /HEADER STYLES TABLET */
 /* HEADER STYLES DESKTOP */
 @media screen and (min-width: 1158px) {
+    .logo-header {
+        margin-right: 76px;
+    }
 .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -308,7 +310,7 @@ screen and (min-resolution: 2dppx) {
     height: 56px;
     border: none;
     border-radius: 4px;
-    margin: 48px auto 0;
+    margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -763,7 +765,7 @@ screen and (min-resolution: 2dppx) {
     flex-wrap: wrap;
     column-gap: 24px;
     margin: 0 auto;
-    margin-left: 108px;
+    max-width: 584px;
     
 } 
 
@@ -797,6 +799,7 @@ screen and (min-resolution: 2dppx) {
     align-items: baseline;
     gap: 0;
     margin: 0 auto;
+    max-width: 1158px;
 }
 .main-cont {
     margin-right: 120px;
@@ -855,6 +858,7 @@ screen and (min-resolution: 2dppx) {
     visibility: hidden;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
+    
 }
 
 .backdrop.is-open {
@@ -865,6 +869,7 @@ screen and (min-resolution: 2dppx) {
 
 .modal {
     width: 288px;
+    height: 623px;
     background-color: #FCFCFC;
     border-radius: 4px;
     position: absolute;
@@ -1159,6 +1164,8 @@ screen and (min-resolution: 2dppx) {
 @media screen and (min-width: 768px) {
 .modal {
     width: 408px;
+    height: 584px;
+    margin: 96px auto;
 }
 }
 
@@ -1275,6 +1282,7 @@ screen and (min-resolution: 2dppx) {
 
 /*  DESCRIPTION BENEFITS */
 /* MENU  WINDOW */
+
 .menu-mobile-container {
     display: flex;
     flex-direction: column;
@@ -1351,19 +1359,30 @@ screen and (min-resolution: 2dppx) {
     color: #404bbf;
 }
 
+.navigation-mobile-menu .mobile-item li:last-child {
+    margin-bottom: 0;
+}
 .navigation-mobile-menu {
     margin-bottom: auto;
+    
 }
 
-.mobile-item {
-    margin-bottom: 40px;
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
+
+.address-mobile {
+    margin-bottom: 48px;
+}
 .address-menu-mobile {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 48px;
+    
+    
 }
 
 .address-data-mobile {
